@@ -1,0 +1,62 @@
+.react-flow-line {
+    width: inherit;
+    height: 10px;
+    transition: width 1s;
+}
+
+.react-flow-line div {
+    height: 5px;
+    width: 0px;
+    position: absolute;
+    left: 100px;
+    background: #000;
+    border-radius: 5px;
+    transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.react-flow-box {
+    width:inherit;
+    height: 50px;
+    transition: width 1s;
+    fill: transparent;
+}
+
+.react-flow-circle {
+    position: relative;
+    width: inherit;
+    height: 50px;
+}
+
+.react-flow-circle-dot {
+    left: 48%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 100%;
+}
+.react-flow-circle-plus {
+    left: -18px;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    background: #000;
+    border-radius: 100%;
+    top: 0px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transform: translateX(15px);
+    opacity: 0;
+    transition: all 0.5s;
+    transform-origin: 50% 50%;
+}
+
+.react-flow-circle-dot:hover .react-flow-circle-plus {
+    width: 50px;
+    height: 50px;
+    transform: translateX(0px);
+    opacity: 1;
+}
